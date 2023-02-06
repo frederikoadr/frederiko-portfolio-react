@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+  --darkGray-color: #3d3d3d;
+
+  --primary-color: #18181E;
+  --secondary-color: #2dc1df;
+  --black-color: #ffffff;
+  --lightGray-color: #3d3d3d;
+  --gray-color: #a8afbb;
+  --brown-color: #46364a;
+  --white-color: #0B0A10;
+  --darkGray-color: #e4e4e4;
+  --icon-bg-color: #18161F;
+  --item-bg-color: #15131B
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
