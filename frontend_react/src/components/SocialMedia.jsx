@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsGithub, BsInstagram } from 'react-icons/bs'
-import { FaLinkedin, FaGitlab } from 'react-icons/fa'
+import { FaLinkedin, FaGitlab, FaItchIo } from 'react-icons/fa'
 
 const SocialMedia = () => {
   return (
@@ -16,8 +16,8 @@ const SocialMedia = () => {
           </a>
         </div>
         <div>
-          <a href="https://gitlab.com/frederikoadr" target="_blank" rel="noopener noreferrer">
-            <FaGitlab />
+          <a href="https://adriian.itch.io/" target="_blank" rel="noopener noreferrer">
+            <FaItchIo />
           </a>
         </div>
     </div>

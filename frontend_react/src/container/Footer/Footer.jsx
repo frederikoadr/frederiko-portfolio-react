@@ -40,7 +40,7 @@ const Footer = () => {
       <h2 className="head-text">Take a <span>coffee</span>  & <span>chat</span>  with me <span>ツ</span></h2>
 
       <div className="app__footer-cards">
-        <div className="app__footer-card ">
+        <div className="app__footer-card">
           <img src={images.email} alt="email" />
           <a href="mailto:frederiko.adrian@gmail.com" className="p-text">frederiko.adrian@gmail.com</a>
         </div>
