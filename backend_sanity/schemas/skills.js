@@ -1,3 +1,5 @@
+import { orderRankField } from '@sanity/orderable-document-list'
+
 export default{
     name:'skills',
     title:'Skills',
@@ -21,6 +23,6 @@ export default{
               hotspot: true,
             },
         },
-        
-    ]
+        orderRankField({ type: 'skills' })
+    ],
 }

@@ -1,3 +1,5 @@
+import { orderRankField } from '@sanity/orderable-document-list'
+
 export default{
     name: 'testimonials',
     title: 'Testimonials',
@@ -25,6 +27,7 @@ export default{
             name: 'feedback',
             title: 'Feedback',
             type: 'string'
-        }
+        },
+        orderRankField({ type: 'testimonials' })
     ]
 }
