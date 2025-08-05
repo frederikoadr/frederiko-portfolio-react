@@ -14,7 +14,7 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "works"] | order(tags[0] asc)'
+    const query = '*[_type == "works"] | order(orderRank asc)'
   
     client.fetch( query)
       .then((data) => {
