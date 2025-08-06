@@ -1,3 +1,5 @@
+import { orderRankField } from '@sanity/orderable-document-list'
+
 export default{
     name:'experiences',
     title:'Experiences',
@@ -14,5 +16,6 @@ export default{
             type:'array',
             of:[{ type:'workExperience'}]
         },
+        orderRankField({ type: 'experiences' })
     ]
 }

@@ -1,29 +1,26 @@
-
 import { orderableDocumentListDeskItem } from '@sanity/orderable-document-list'
+
+const orderableTypes = [
+  { type: 'abouts', title: '👤 Abouts' },
+  { type: 'works', title: '💼 Works' },
+  { type: 'skills', title: '🏂 Skills' },
+  { type: 'testimonials', title: '🗣️ Testimonials' },
+  { type: 'experiences', title: '🧑‍💻 Experiences' },
+]
 
 export const structure = (S, context) =>
   S.list()
     .title('Content')
     .items([
-      orderableDocumentListDeskItem({
-        type: 'works',
-        title: '💼 Works',
-        S,
-        context,
-      }),
-      orderableDocumentListDeskItem({
-        type: 'skills',
-        title: '🏂 Skills',
-        S,
-        context,
-      }),
-      orderableDocumentListDeskItem({
-        type: 'testimonials',
-        title: '🗣️ Testimonials',
-        S,
-        context,
-      }),
-      ...S.documentTypeListItems().filter((item) =>
-        !['works', 'skills', 'testimonials'].includes(item.getId()),
-    ),
-  ])
+      ...orderableTypes.map(({ type, title }) =>
+        orderableDocumentListDeskItem({
+          type,
+          title,
+          S,
+          context,
+        })
+      ),
+      ...S.documentTypeListItems().filter(
+        (item) => !orderableTypes.some(({ type }) => type === item.getId())
+      ),
+    ])
