@@ -44,10 +44,6 @@ const Footer = () => {
           <img src={images.email} alt="email" />
           <a href="mailto:frederiko.adrian@gmail.com" className="p-text">frederiko.adrian@gmail.com</a>
         </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+6283834695020" className="p-text">+62 8383 469 5020</a>
-        </div>
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">

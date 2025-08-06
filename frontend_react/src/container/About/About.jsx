@@ -8,7 +8,7 @@ import './About.scss'
 const About = () => {
   const [abouts, setAbouts] = useState([]);
   useEffect(()=>{
-    const query = `*[_type == "abouts"]`;
+    const query = `*[_type == "abouts"] | order(orderRank asc)`;
     client.fetch(query).then((data) => setAbouts(data));
   }, [])
   return (
